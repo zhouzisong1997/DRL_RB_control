@@ -14,7 +14,11 @@ Deep reinforcement learning control unlocks enhanced heat transfer in turbulent 
 -----------------------------------------------------------------------------
 ### Control of turublent flow through Deep Reinforcement Learning (Test Code)
 
-
+```
+autoreconf -i
+./configure
+make
+```
 
 #### Control of turublent flow through Deep Reinforcement Learning (Test Code)
 
