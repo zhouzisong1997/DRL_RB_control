@@ -21,7 +21,9 @@ DNS Module Dependencies:
 MPI, BLAS, LAPACK, FFTW3, HDF5 with parallel I/O.
 
 DRL Module Dependencies:
-Anaconda. Install required Python libraries using the tfrl-cookbook.yml file from
+Anaconda. 
+
+The required Python libraries could be installed using the tfrl-cookbook.yml file from
 TensorFlow 2 Reinforcement Learning Cookbook
 (GitHub: https://github.com/PacktPublishing/Tensorflow-2-Reinforcement-Learning-Cookbook).
 
