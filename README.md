@@ -45,8 +45,21 @@ Replace the 'afid' executable in this directory with the recompiled afid from th
 The initial subfolder contains: Initial field data for Ra=1E7, and DNS computational parameters
 
 
+### 4. DRL-DNS File Interaction:
+Key DRL files in the main directory:
+Env_DNS.py, main_dw.py, actor_net.py, critic_net.py, ou_noise.py
 
+Env_DNS.py handles DRL-DNS file exchange.
 
+The author uses the compute node's local SSD for I/O operations (directory specified by the 'local_tmpdir' variable).
+If no local SSD is available in your environment, modify this configuration accordingly.
+
+Adjust paths in the following section of Env_DNS.py to initialize the DNS process:
+```
+os.system('mpirun -np your_cores /your_directory/DNS_result/afid &')
+# Sample
+# os.system('mpirun -np 256 /control_DRL/code-1e7-0/DNS_result/afid &')
+```
 
 
 
