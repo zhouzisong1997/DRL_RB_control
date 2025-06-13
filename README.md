@@ -12,7 +12,23 @@ Detailed architecture and computational parameters are documented in the accompa
 Deep reinforcement learning control unlocks enhanced heat transfer in turbulent convection (currently under review).
 
 -----------------------------------------------------------------------------
-### Control of turublent flow through Deep Reinforcement Learning (Test Code)
+### Usage Instructions
+
+#### 1.Code Execution Environment:
+Both open-source code environments are required. Refer to their respective links for setup.
+
+DNS Module Dependencies:
+MPI, BLAS, LAPACK, FFTW3, HDF5 with parallel I/O.
+
+DRL Module Dependencies:
+Anaconda. Install required Python libraries using the tfrl-cookbook.yml file from
+TensorFlow 2 Reinforcement Learning Cookbook
+(GitHub: https://github.com/PacktPublishing/Tensorflow-2-Reinforcement-Learning-Cookbook).
+
+Compile DNS Module:
+Navigate to the DNS_code directory. The compilation process mirrors the open-source AFiD code.
+Recommended command:
+
 
 ```
 autoreconf -i
