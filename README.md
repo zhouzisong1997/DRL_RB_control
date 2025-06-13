@@ -3,13 +3,17 @@
 This code is primarily built upon deep reinforcement learning (DRL) to control turbulent Rayleigh-Bénard (R-B) convection, aiming to enhance heat transfer at the walls. 
 
 The implementation consists of two main components:
-1. The DRL module, developed in Python and built extensively upon the open-source code TurbulenceControlCode (GitHub: https://github.com/taehyuklee/TurbulenceControlCode).
-2. The direct numerical simulation (DNS) module, implemented in Fortran and based substantially on the open-source code AFiD (GitHub: https://github.com/PhysicsofFluids/AFiD).
+1. The DRL module, developed in Python and built extensively upon the open-source code TurbulenceControlCode (GitHub: https://github.com/taehyuklee/TurbulenceControlCode， Related paper: [Lee et al (2023)](https://journals.aps.org/prfluids/abstract/10.1103/PhysRevFluids.8.024604?ft)).
+2. The direct numerical simulation (DNS) module, implemented in Fortran and based substantially on the open-source code AFiD (GitHub: https://github.com/PhysicsofFluids/AFiD  Related paper: [van der Poel et al (2015)](http://dx.doi.org/10.1016/j.compfluid.2015.04.007)).
 
 We gratefully acknowledge the original authors of these open-source codes for their immense contributions to the current implementation! 
 
 Detailed architecture and computational parameters are documented in the accompanying paper:
 Deep reinforcement learning control unlocks enhanced heat transfer in turbulent convection (currently under review).
+
+-----------------------------------------------------------------------------
+### Control of turublent flow through Deep Reinforcement Learning (Test Code)
+
 
 
 #### Control of turublent flow through Deep Reinforcement Learning (Test Code)
