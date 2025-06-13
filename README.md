@@ -5,6 +5,7 @@ This code is primarily built upon deep reinforcement learning (DRL) to control t
 The implementation consists of two main components:
 1. The DRL module, developed in Python and built extensively upon the open-source code TurbulenceControlCode (GitHub: https://github.com/taehyuklee/TurbulenceControlCode).
 2. The direct numerical simulation (DNS) module, implemented in Fortran and based substantially on the open-source code AFiD (GitHub: https://github.com/PhysicsofFluids/AFiD).
+
 We gratefully acknowledge the original authors of these open-source codes for their immense contributions to the current implementation! 
 
 Detailed architecture and computational parameters are documented in the accompanying paper:
