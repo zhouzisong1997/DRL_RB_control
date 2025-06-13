@@ -14,7 +14,7 @@ Deep reinforcement learning control unlocks enhanced heat transfer in turbulent 
 -----------------------------------------------------------------------------
 ### Usage Instructions
 
-#### 1.Code Execution Environment:
+#### 1. Code Execution Environment
 Both open-source code environments are required. Refer to their respective links for setup.
 
 DNS Module Dependencies:
@@ -27,16 +27,28 @@ The required Python libraries could be installed using the tfrl-cookbook.yml fil
 TensorFlow 2 Reinforcement Learning Cookbook
 (GitHub: https://github.com/PacktPublishing/Tensorflow-2-Reinforcement-Learning-Cookbook).
 
-Compile DNS Module:
-Navigate to the DNS_code directory. The compilation process mirrors the open-source AFiD code.
+#### 2. Code Compile DNS Module
+Navigate to the 'DNS_code' directory. The compilation process mirrors the open-source AFiD code.
 Recommended command:
-
-
 ```
 autoreconf -i
 ./configure
 make
 ```
+
+#### 3. Configure DNS Output Directory
+
+The 'DNS_result' folder stores simulation data.
+
+Replace the afid executable in this directory with the recompiled afid from the DNS module.
+
+The initial subfolder contains: Initial field data for Ra=1E7, and DNS computational parameters
+
+
+
+
+
+
 
 #### Control of turublent flow through Deep Reinforcement Learning (Test Code)
 
