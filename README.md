@@ -29,7 +29,7 @@ The required Python libraries could be installed using the tfrl-cookbook.yml fil
 TensorFlow 2 Reinforcement Learning Cookbook
 (https://github.com/PacktPublishing/Tensorflow-2-Reinforcement-Learning-Cookbook).
 
-### 2. Code Compile DNS Module
+### 2. Code Compile of DNS Module
 Navigate to the 'DNS_code' directory. The compilation process mirrors the open-source AFiD code.
 Recommended compile command:
 ```
