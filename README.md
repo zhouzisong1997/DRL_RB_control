@@ -3,8 +3,10 @@
 This code is primarily built upon deep reinforcement learning (DRL) to control turbulent Rayleigh-Bénard (R-B) convection, aiming to enhance heat transfer at the walls. 
 
 The implementation consists of two main components:
-1. The DRL module, developed in Python and built upon the open-source code TurbulenceControlCode (GitHub: https://github.com/taehyuklee/TurbulenceControlCode  Related paper: [Lee et al (2023)](https://journals.aps.org/prfluids/abstract/10.1103/PhysRevFluids.8.024604?ft)).
-2. The direct numerical simulation (DNS) module, implemented in Fortran and based on the open-source code AFiD (GitHub: https://github.com/PhysicsofFluids/AFiD  Related paper: [van der Poel et al (2015)](http://dx.doi.org/10.1016/j.compfluid.2015.04.007)).
+1. The DRL module, developed in Python and built upon the open-source code TurbulenceControlCode
+   (https://github.com/taehyuklee/TurbulenceControlCode  Related paper: [Lee et al (2023)](https://journals.aps.org/prfluids/abstract/10.1103/PhysRevFluids.8.024604?ft)).
+2. The direct numerical simulation (DNS) module, implemented in Fortran and based on the open-source code AFiD
+   (https://github.com/PhysicsofFluids/AFiD  Related paper: [van der Poel et al (2015)](http://dx.doi.org/10.1016/j.compfluid.2015.04.007)).
 
 We gratefully acknowledge the original authors of these open-source codes for their immense contributions to the current implementation! 
 
@@ -25,7 +27,7 @@ Anaconda.
 
 The required Python libraries could be installed using the tfrl-cookbook.yml file from
 TensorFlow 2 Reinforcement Learning Cookbook
-(GitHub: https://github.com/PacktPublishing/Tensorflow-2-Reinforcement-Learning-Cookbook).
+(https://github.com/PacktPublishing/Tensorflow-2-Reinforcement-Learning-Cookbook).
 
 ### 2. Code Compile DNS Module
 Navigate to the 'DNS_code' directory. The compilation process mirrors the open-source AFiD code.
