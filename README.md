@@ -44,10 +44,10 @@ The 'DNS_result' folder stores simulation data.
 
 Replace the 'afid' executable in this directory with the recompiled afid from the DNS module.
 
-The initial subfolder contains: Initial field data for Ra=1E7, and DNS computational parameters
+The initial subfolder contains: Initial field data for Ra=1E7, and DNS computational parameters.
 
 
-### 4. DRL-DNS File Interaction:
+### 4. DRL-DNS File Interaction
 Key DRL files in the main directory:
 Env_DNS.py, main_dw.py, actor_net.py, critic_net.py, ou_noise.py
 
@@ -63,36 +63,17 @@ os.system('mpirun -np your_cores /your_directory/DNS_result/afid &')
 # os.system('mpirun -np 256 /control_DRL/code-1e7-0/DNS_result/afid &')
 ```
 
+### 5.Modify DRL Hyperparameters
+Customize hyperparameters in the DRL module as needed. The current version is designed for the R-B convection at Ra=1E7.
+
+### 6.Finish
+After verifying all modifications, execute the program using:
+```
+python main_dw.py >> output00.txt
+```
 
 
-#### Control of turublent flow through Deep Reinforcement Learning (Test Code)
-
-Welcome to my repository
-
-This repository contains the codes mentioned in the paper <span style="color:red"> "Turbulence Control for Drag Reduction through deep reinforcement learning" </span> (https://journals.aps.org/prfluids/abstract/10.1103/PhysRevFluids.8.024604?ft).
-
-
-This repository has three directories (packages) containing three DRL model files.
-
-
-DoubleQdu - only streamwise wall shear stress field data is used to train the model.
-
-DoubleQdudw - Both streamwise and spanwise wall shear stress field data are utilized to train the model.
-
-DoubleQdw - only spanwise wall shear stress field data is used to train the model.
-
-
-
-Each package contains the following Python scripts.
-1. Environment.py (Fluid simulator connected to DRL model)
-2. actor net.py (actor network)
-3. critic net.py (critic network)
-4. main xx.py (main DRL algorithm)
-5. monitoring.py (it is for monitoring of fluid behavior in learning and statistics for turbulence)
-6. ou noise.py (we formerly utilized the ou noise.py script, but we no longer do so you do not need to care about this file)
-
-in addition, we used version 1 of TensorFlow
-
+### Thank you!
 -----------------------------------------------------------------------------
 Additionally, Each model package has the TestCode directory.
 
