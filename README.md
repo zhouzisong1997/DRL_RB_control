@@ -11,7 +11,7 @@ The implementation consists of two main components:
 We gratefully acknowledge the original authors of these open-source codes for their immense contributions to the current implementation! 
 
 Detailed architecture and computational parameters are documented in the accompanying paper:
-Deep reinforcement learning control unlocks enhanced heat transfer in turbulent convection (currently under review).
+Deep reinforcement learning control unlocks enhanced heat transfer in turbulent convection ([Zhou & Zhu (2025)](https://www.pnas.org/doi/10.1073/pnas.2506351122)).
 
 -----------------------------------------------------------------------------
 ## Usage Instructions
